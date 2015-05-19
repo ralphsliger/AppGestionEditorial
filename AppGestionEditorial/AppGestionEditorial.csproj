@@ -79,7 +79,9 @@
   <ItemGroup>
     <Compile Include="Datos\Formato.cs" />
     <Compile Include="Modelo\Cientificos.cs" />
+    <Compile Include="Modelo\Cliente.cs" />
     <Compile Include="Modelo\Documentos.cs" />
+    <Compile Include="Modelo\Factura.cs" />
     <Compile Include="Modelo\Libros.cs" />
     <Compile Include="Modelo\Revistas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
