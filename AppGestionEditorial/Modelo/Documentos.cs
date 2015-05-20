@@ -88,18 +88,63 @@ namespace AppGestionEditorial.Modelo
 
 
         }
-
-        
-
-
-
-
         
 
         }
 
 
         #endregion 
+
+#region "___________ Metodos _______________ "
+
+    public override string ToString()
+{
+    return "\nAutor: " + this.autor +
+       "\nNombreDocumento:" + this.NombreDocumento +
+       "\nGenero:" + this.genero +
+        "\nIdiomaDocumento:"+ this.idiomaDocumento +
+        "\nAño:" + this.año;
+
+}
+
+pubc override bool equals(objetc obj)
+{
+    Documentos o = (Documentos)obj;
+    bool result = false;
+
+    if ((this.autor == o.autor)) &&
+        (this.nombreDocumento == o.nombreDocumento) &&
+        (this.genero == o.genero) &&
+        (this.idiomaDocumento == o.idiomaDocumento) &&
+        (this.año == o.año))
+
+    result = true;
+
+    return result;
+
+
+}
+    public override int GetHashCode()
+{
+    return this.ToString().GetHashCode();
+
+}
+}
+
+
+
+
+
+
+
+
+
+#endregion 
+
+
+
+
+
 
     }
 }
