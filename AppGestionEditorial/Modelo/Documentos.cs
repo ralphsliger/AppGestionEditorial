@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -7,84 +7,112 @@ namespace AppGestionEditorial.Modelo
 {
     public class Documentos
     {
-#region  "__                                Atributos                      ____"
+#region  "__                                Atributos                     ____"
+
+        private string codigo;
+
+
+        private string titulo;
+
 
         private string autor;
 
-       
-        private string NombreDocumento;
+
+
+       private string idioma;
+
+
+
+        private string editorial;
+
+
+
+        private string categoria;
+
+
+
+        private int numeroDePaginas;
+
 
         
-        private string genero;
 
+    
+     
 
-        private int año;
-
-        
-
-        
-        private string idiomaDocumento;
-
-        
 
 
 #endregion
 
         #region "_____ Propiedades     "
 
-        public string Autor
-        {
-            get { return autor; }
-            set { autor = value; }
-        }
+       public string Codigo
+{
+  get { return codigo; }
+  set { codigo = value; }
+}
 
-        public string NombreDocumento1
-        {
-            get { return NombreDocumento; }
-            set { NombreDocumento = value; }
-        }
+public string Titulo
+{
+  get { return titulo; }
+  set { titulo = value; }
+}
 
-        public string Genero
-        {
-            get { return genero; }
-            set { genero = value; }
-        }
+public string Autor
+{
+  get { return autor; }
+  set { autor = value; }
+}
 
-        public int Año
-        {
-            get { return año; }
-            set { año = value; }
-        }
+        public string Idioma
+{
+  get { return idioma; }
+  set { idioma = value; }
+}
 
-
-        public string IdiomaDocumento
-        {
-            get { return idiomaDocumento; }
-            set { idiomaDocumento = value; }
-        }
- 
+        public string Editorial
+{
+  get { return editorial; }
+  set { editorial = value; }
+}
 
 
 
+        public string Categoria
+{
+  get { return categoria; }
+  set { categoria = value; }
+}
 
+        public int NumeroDePaginas
+{
+  get { return numeroDePaginas; }
+  set { numeroDePaginas = value; }
+}
+   
         #endregion 
 
         #region "____Constructores____"
 
         public Documentos()
         {
+            this.codigo = "XXXXX";
+            this.titulo = "XXXXX";
             this.autor = "XXXXX";
-            this.NombreDocumento = "XXXXX";
-            this.idiomaDocumento = "XXXXX";
-            this.genero = "XXXXX";
-            this.año = 0;
+            this.idioma= "XXXXXX";
+            this.categoria = "XXXXX";
+            this.editorial = "XXXXXX";
+            this.numeroDePaginas= 0;
+
         }
 
-        public Documentos(string autor, string nombreDocumento,string genero,int año){
+        public Documentos(string codigo, string titulo, string autor,string idioma, string categoria,string editorial,int numeroDePaginas ){
+            this.codigo= codigo;
+            this.titulo=titulo;
             this.autor= autor;
-            this.NombreDocumento= nombreDocumento;
-            this.genero= genero;
-            this.año= año;
+             this.idioma= idioma;
+            this.categoria= categoria;
+            this.editorial= editorial;
+            this.numeroDePaginas= numeroDePaginas;
 
 
         }
@@ -99,10 +127,12 @@ namespace AppGestionEditorial.Modelo
 
     public override string ToString()
 {
-    return "\nAutor: " + this.autor +
-       "\nNombreDocumento:" + this.NombreDocumento +
-       "\nGenero:" + this.genero +
-        "\nIdiomaDocumento:"+ this.idiomaDocumento +
+    return "\nCodigo: " + this.codigo +
+       "\nNombreDocumento:" + this.titulo +
+      "\nAutor:"+ this.autor +
+       "\nCategoria:" + this.categoria +
+        "\nIdiomaDocumento:"+ this.idioma +
+      "\nNumeroDePaginas"+ this.numeroDePaginas +
         "\nAño:" + this.año;
 
 }
