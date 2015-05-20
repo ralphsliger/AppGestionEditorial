@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 using System.Linq;
@@ -11,8 +11,7 @@ namespace AppGestionEditorial.Modelo
 
         public Formatos() : base() { }
 
-        public Formatos(string autor, string NombreDocumento, string genero, int año, string idiomaDocumento) : base(autor,NombreDocumento, genero, año, idiomaDocumento) { }
-
+        public Formatos(string codigo, string titulo, string autor, string idioma, string editorial, string categoria, int numeroDePaginas) : base(codigo, titulo, autor, idioma, editorial, categoria, numeroDePaginas) { }
 
 
 
