@@ -80,7 +80,6 @@
   <ItemGroup>
     <Compile Include="Datos\Formato.cs" />
     <Compile Include="Modelo\Cientificos.cs" />
-    <Compile Include="Modelo\Cliente.cs" />
     <Compile Include="Modelo\Documentos.cs" />
     <Compile Include="Modelo\Formatos.cs" />
     <Compile Include="Modelo\Libros.cs" />
