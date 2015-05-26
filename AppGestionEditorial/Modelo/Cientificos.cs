@@ -32,7 +32,11 @@ namespace AppGestionEditorial.Modelo
         public Cientificos() : base(){}
 
 
-        public Cientificos(string codigo, string titulo, string autor, string idioma, string editorial, string categoria, int numeroDePaginas) : base(codigo, titulo, autor, idioma, editorial, categoria, numeroDePaginas) { }
+        public Cientificos(string codigo, string titulo, string autor, string idioma, string editorial, string categoria, int numeroDePaginas) : base(codigo, titulo, autor, idioma, editorial, categoria, numeroDePaginas) {
+
+            this.tipo = tipo;
+        
+        }
 
         #endregion
 

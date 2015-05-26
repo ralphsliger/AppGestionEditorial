@@ -40,7 +40,11 @@ namespace AppGestionEditorial.Modelo
 
         public Libros() :base(){ }
 
-        public Libros(string codigo, string titulo, string autor,  string idioma , string editorial , string categoria , int numeroDePaginas) : base(codigo,titulo,autor,idioma,editorial,categoria,numeroDePaginas){}
+        public Libros(string codigo, string titulo, string autor,  string idioma , string editorial , string categoria , int numeroDePaginas) : base(codigo,titulo,autor,idioma,editorial,categoria,numeroDePaginas){
+            this.numeroCapitulos = numeroCapitulos;
+            this.numeroTomos = numeroTomos;
+
+        }
 
 
 #endregion 
