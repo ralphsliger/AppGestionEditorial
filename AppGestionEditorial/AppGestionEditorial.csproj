@@ -87,6 +87,8 @@
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Scripts\npm.js" />
     <Content Include="Web.config" />
+    <Content Include="Web\Crear.aspx" />
+    <Content Include="Web\Listar.aspx" />
     <Content Include="Web\Site1.Master" />
   </ItemGroup>
   <ItemGroup>
@@ -99,12 +101,26 @@
     <Compile Include="Modelo\Libros.cs" />
     <Compile Include="Modelo\Revistas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\Crear.aspx.cs">
+      <DependentUpon>Crear.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Crear.aspx.designer.cs">
+      <DependentUpon>Crear.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Web\Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Web\Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Listar.aspx.cs">
+      <DependentUpon>Listar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Listar.aspx.designer.cs">
+      <DependentUpon>Listar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Web\Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
