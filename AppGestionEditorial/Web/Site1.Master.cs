@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace AppGestionEditorial.Web
+namespace App.Web
 {
-    public partial class iPublicacion : System.Web.UI.MasterPage
+    public partial class Site1 : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

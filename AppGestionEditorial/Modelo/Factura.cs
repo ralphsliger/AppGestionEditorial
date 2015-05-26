@@ -51,7 +51,7 @@ namespace AppGestionEditorial.Modelo
         #region "_____________Constructores_____________"
 
 
-        public Factura() :base(){
+        public Factura():base(){
 
             this.identificacion = 123;
             this.fecha = "26/06/2015";

@@ -83,10 +83,12 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
+    <Content Include="Scripts\HtmlPage1.html" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Scripts\npm.js" />
     <Content Include="Web.config" />
+    <Content Include="Web\Site1.Master" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Datos\Formato.cs" />
@@ -98,12 +100,19 @@
     <Compile Include="Modelo\Libros.cs" />
     <Compile Include="Modelo\Revistas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Web\iPublicacion.cs" />
-    <Compile Include="Web\iPublicacion.Master.cs">
-      <DependentUpon>iPublicacion.Master</DependentUpon>
+    <Compile Include="Web\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Web\iPublicacion.Master.designer.cs">
-      <DependentUpon>iPublicacion.Master</DependentUpon>
+    <Compile Include="Web\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -115,7 +124,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-    <Content Include="Web\iPublicacion.Master" />
+    <Content Include="Web\Default.aspx" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
