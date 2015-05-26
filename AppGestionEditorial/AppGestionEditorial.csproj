@@ -74,7 +74,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Datos\formato.xml" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -91,7 +90,7 @@
     <Content Include="Web\Site1.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Datos\Formato.cs" />
+    <Compile Include="Datos\EditorialRepositories.cs" />
     <Compile Include="Modelo\Cientificos.cs" />
     <Compile Include="Modelo\Cliente.cs" />
     <Compile Include="Modelo\Documentos.cs" />

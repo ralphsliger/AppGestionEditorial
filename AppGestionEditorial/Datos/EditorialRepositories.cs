@@ -5,7 +5,8 @@ using System.Web;
 
 namespace AppGestionEditorial.Datos
 {
-    public class Formato
+    public class EditorialRepositories
     {
+
     }
 }
