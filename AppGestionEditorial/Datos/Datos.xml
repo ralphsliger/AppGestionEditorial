@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Personas>
+  <Persona>
+    <ID>dfghjk</ID>
+    <Nombres>dfghjkl</Nombres>
+    <Apellidos>fghjkl</Apellidos>
+    <EmailP>fghjkl</EmailP>
+    <EmailW>fghjkl</EmailW>
+    <TelefonoP>ghjk</TelefonoP>
+    <TelefonoW>ghjk</TelefonoW>
+  </Persona>
+  <Persona>
+    <ID>fgdafgdsfg</ID>
+    <Nombres>dsfgdsfg</Nombres>
+    <Apellidos>fghjkl</Apellidos>
+    <EmailP>dfghjk</EmailP>
+    <EmailW>fghjkfghj</EmailW>
+    <TelefonoP>fghjk</TelefonoP>
+    <TelefonoW>fghjkl</TelefonoW>
+  </Persona>
+</Personas>

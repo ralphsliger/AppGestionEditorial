@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Clientes>
+  <Cliente>
+    <ID>34</ID>
+    <Nombres>Alfredo</Nombres>
+    <Apellidos>Rodelo</Apellidos>
+    <Email>alfredorodelo23@hotmail.com</Email>
+    <Telefono>3124600156</Telefono>
+  </Cliente>
+</Clientes>

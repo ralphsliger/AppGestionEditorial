@@ -10,7 +10,7 @@ namespace AppGestionEditorial.Modelo
 
         #region "__________Atributos________________________"
 
-        private int id;
+        private int identifiacion;
         private string nombres;
         private string apellidos;
         private string direccion;  
@@ -22,8 +22,8 @@ namespace AppGestionEditorial.Modelo
         #region"______________ propiedades__________________"
         public int Id
         {
-            get { return id; }
-            set { id = value; }
+            get { return identifiacion; }
+            set { identifiacion = value; }
         }
         public string Nombres
         {
@@ -56,7 +56,7 @@ namespace AppGestionEditorial.Modelo
         #region Constructores
         public Cliente() {
 
-            this.id = 2;
+            this.identifiacion = 2;
             this.nombres = "Ralph ";
             this.apellidos = "Sliger Ordoñez";
             this.direccion = "los alpes edif Villa sofia";
@@ -65,9 +65,9 @@ namespace AppGestionEditorial.Modelo
         
         }
 
-        public Cliente(int id,string nombres ,string apellidos,string direccion,int telefono,string email){
+        public Cliente(int identificacion,string nombres ,string apellidos,string direccion,int telefono,string email){
 
-            this.id = id;
+            this.identifiacion = identificacion;
             this.nombres = nombres;
             this.apellidos = apellidos;
             this.direccion = direccion;
@@ -83,7 +83,7 @@ namespace AppGestionEditorial.Modelo
         public override string ToString()
         {
             return base.ToString() +
-                               "\n Id " + this.id +
+                               "\n Id " + this.identifiacion +
                                "\n Nombres " + this.nombres +
                                "\n Apellidos " + this.apellidos +
                                "\n Direccion " + this.direccion +
@@ -100,7 +100,7 @@ namespace AppGestionEditorial.Modelo
             Cliente o = (Cliente)obj;
             bool result = false;
 
-            if (base.Equals(o) && (this.id == o.id)
+            if (base.Equals(o) && (this.identifiacion == o.identifiacion)
                 && (this.nombres == o.nombres)
                 && (this.apellidos == o.apellidos)
                 && (this.direccion == o.direccion)
